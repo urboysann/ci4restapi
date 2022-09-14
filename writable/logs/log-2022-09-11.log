@@ -1,0 +1,302 @@
+CRITICAL - 2022-09-11 20:12:43 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-11 20:27:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4restapi', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#7 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-11 20:27:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-11 20:28:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4restapi', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#7 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-11 20:28:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-11 20:29:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4restapi', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#7 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-11 20:29:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-11 20:30:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4restapi', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#7 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-11 20:30:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-11 20:31:17 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4restapi', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#10 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci4restapi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4restapi\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4restapi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4restapi\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4restapi\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4restapi\app\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4restapi\app\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.co...')
+#7 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+#8 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+#9 C:\xampp\htdocs\ci4restapi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4restapi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-11 20:31:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `otentikasi`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Otentikasi.php(40): App\Models\ModelOtentikasi->getEmail('kumara@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 21:44:29 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 21:45:02 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 21:49:08 --> Undefined variable $key
+in APPPATH\Helpers\jwt_helper.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Helpers\\jwt_helper.php', 31)
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 21:50:01 --> Undefined variable $key
+in APPPATH\Helpers\jwt_helper.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Helpers\\jwt_helper.php', 31)
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 21:50:36 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 22:27:43 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 22:27:47 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-11 22:28:44 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

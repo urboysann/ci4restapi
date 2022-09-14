@@ -1,0 +1,95 @@
+CRITICAL - 2022-09-08 01:25:23 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:39:18 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:39:41 --> Class "JWT" not found
+in APPPATH\Helpers\jwt_helper.php on line 30.
+ 1 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:39:59 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:42:08 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:45:08 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:45:16 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:46:14 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:46:42 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 20:50:37 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 32 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(32): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 21:02:17 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\xampp\htdocs\ci4restapi\app\Helpers\jwt_helper.php on line 31 and at least 3 expected
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 183.
+ 1 APPPATH\Helpers\jwt_helper.php(31): Firebase\JWT\JWT::encode([...], '13santika13')
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-08 21:11:15 --> Undefined variable $key
+in APPPATH\Helpers\jwt_helper.php on line 31.
+ 1 APPPATH\Helpers\jwt_helper.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Helpers\\jwt_helper.php', 31)
+ 2 APPPATH\Controllers\Otentikasi.php(49): createJWT('kumara@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Otentikasi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
